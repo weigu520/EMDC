@@ -1,0 +1,25 @@
+<emdc>
+    <BackUp class="com.briup.environment.backup.BackUpImpl">
+        <rootpath>G:\\emdc</rootpath>
+        <clientsendenvs>client_send_envs.bak</clientsendenvs>
+        <gatheredlines>gathered_lines.bak</gatheredlines>
+        <storeenvs>store_envs.bak</storeenvs>
+    </BackUp>
+    <Client class="com.briup.environment.client.ClientImpl">
+        <ip>127.0.0.1</ip>
+        <port>8888</port>
+    </Client>
+    <Server class="com.briup.environment.server.ServerImpl">
+        <port>8888</port>
+    </Server>
+    <Gather class="com.briup.environment.gather.GatherImpl">
+        <radwtmp>G:\BD1903\SmartHome\code\radwtmp2</radwtmp>
+    </Gather>
+    <Store class="com.briup.environment.store.StoreImpl">
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://127.0.0.1:8017/emdc?rewriteBatchedStatements=true</url>
+        <username>root</username>
+        <password>root</password>
+        <batchsize>1000</batchsize>
+    </Store>
+</emdc>
